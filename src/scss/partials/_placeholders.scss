@@ -1,0 +1,187 @@
+.main--container {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  &.sub--container {
+    max-width: 85%;
+  }
+}
+.text-bold {
+  font-weight: bold;
+}
+.flex {
+  display: flex;
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.flex--between {
+    justify-content: space-between;
+  }
+  &.flex--middle {
+    align-items: center;
+  }
+  &.flex--center {
+    justify-content: center;
+  }
+  &.flex--right {
+    justify-content: flex-end;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  outline: none;
+  &.btn--primary {
+    background: #462686;
+    color: #ffffff;
+    i {
+      color: #ffffff;
+    }
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.py-50 {
+  padding: 50px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-normal {
+  font-weight: $font-normal;
+}
+
+.custom-select {
+  position: relative;
+
+  .selected--img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%, -50%);
+  }
+
+  .select-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(50%, -50%);
+  }
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: '';
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+  color: $theme-color;
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-selected {
+  border: 3px solid $theme-color;
+  border-radius: 10px;
+  padding-left: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.my--select {
+  width: 60px;
+  padding: 4px;
+  & > ul {
+    padding: 4px;
+    background: white;
+  }
+}

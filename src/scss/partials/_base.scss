@@ -1,5 +1,11 @@
 html {
   box-sizing: border-box;
+  @media (max-width: 1366px) {
+    font-size: 12px;
+    nav {
+      height: 90px;
+    }
+  }
 }
 
 *,
@@ -7,6 +13,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,21 +21,13 @@ html {
   text-decoration: none;
   list-style-type: none;
   font-family: 'Sofia Pro', sans-serif;
+  color: $black;
+
+  outline: none !important;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #f4f6f8;
-  padding: 2em;
-  font-family: 'Roboto', sans-serif;
-  color: #242434;
-  letter-spacing: 0.15px;
-  line-height: 1.7;
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-  align-items: start;
-  grid-gap: 2em;
+button {
+  cursor: pointer;
 }
 
 img {
@@ -37,7 +36,7 @@ img {
 }
 
 .container {
-  width:100%;
+  width: 100%;
   max-width: 1200px;
 }
 

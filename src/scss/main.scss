@@ -1,36 +1,266 @@
-@charset 'utf-8';
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url(../fonts/sfp-bold.ttf);
+  font-weight: 700;
+}
 
-// 1. Config files and helpers
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url(../fonts/sfp-light.ttf);
+  font-weight: 300;
+}
 
-@import '01-abstracts/colors';
-@import '01-abstracts/type';
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url(../fonts/sfp-regular.ttf);
+  font-weight: 400;
+}
 
-// 2. Vendor
+@import 'partials/variables';
+@import 'partials/colors';
+@import 'partials/type';
+@import 'partials/normalize';
+@import 'partials/base';
+@import 'partials/typography';
+@import 'partials/placeholders';
+@import 'partials/mixins';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/footer';
+@import 'partials/mega-menu';
 
-@import '02-vendor/normalize';
+main {
+  .departments {
+    padding: 80px 0;
+    box-shadow: 0px 16px 40px 5px rgba(121, 134, 147, 0.12);
+    .tabs {
+      box-shadow: 0 0 0 1.5px #454545;
+      border-radius: 5px;
+      .tab {
+        width: calc(100% / 6);
+        a {
+          display: block;
+          padding: 15px 0;
+          color: #454545;
+        }
+        &.active {
+          background: $theme-color;
+          box-shadow: 0 0 2px 1px;
+          a {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .tab--view {
+      min-height: 60vh;
+      padding: 40px 0 20px;
 
-// 3. Base styles
+      & > div {
+        width: 50%;
+        h2 {
+          font-size: 2.5rem;
+          max-width: 75%;
+        }
+        p {
+          max-width: 75%;
+          font-size: 1.1rem;
+        }
+      }
+      .vid--holder {
+        position: relative;
+        .play--img {
+          position: absolute;
+          top: 50%;
+          width: 80px;
+          height: 80px;
+          right: 50%;
+          transform: translate(50%, -50%);
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .headers {
+    padding: 100px 0;
+    & > div {
+      & > div {
+        width: 50%;
 
-@import '03-base/base';
-@import '03-base/typography';
+        h2 {
+          font-size: 2.1rem;
+          max-width: 75%;
+        }
 
-// 4. Layout
+        p {
+          max-width: 75%;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  .integrations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      width: 35rem;
+      padding-bottom: 50px;
+    }
+    .integration--icons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      & > div {
+        width: calc(100% / 11);
+        padding-bottom: 3rem;
+        text-align: center;
+        img {
+          width: 3.5rem;
+        }
+      }
+    }
+  }
+  .banner {
+    background: #7837f8;
+    padding: 80px 0;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    h2,
+    p {
+      color: #fafafa;
+    }
+  }
+  .banner--how {
+    padding-bottom: 150px;
+    .banner-content {
+      background: #7837f8;
+      position: relative;
+      padding: 60px 0 120px;
 
-@import '04-layout/grid';
-@import '04-layout/header';
-@import '04-layout/footer';
-@import '04-layout/sidebar';
-@import '04-layout/nav';
-@import '04-layout/forms';
+      .how--left {
+        width: 55%;
+      }
 
-// 5. Components
+      .how--right {
+        li {
+          position: relative;
+          padding-left: 30px;
+          line-height: 2.5;
+          &:before {
+            content: '';
+            background: url(../img/check-circle.svg) no-repeat;
+            background-size: contain;
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
 
-@import '05-components/buttons';
-@import '05-components/accordion';
+      h2 {
+        font-size: 1.8rem;
+        color: #fafafa;
+      }
 
-// 6. Pages
+      p,
+      li {
+        color: #fafafa;
+      }
+      .banner-award-card {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: #fff;
+        padding: 20px 60px;
+        box-shadow: 0px 20px 40px rgba(51, 51, 51, 0.13);
+        border-radius: 10px;
+        p,
+        h2 {
+          color: $black;
+        }
+        img {
+          height: 100px;
+        }
+      }
+    }
+  }
+  .reg--presence {
+    padding: 80px 0;
+    background: rgba(204, 204, 204, 0.1);
+    h2 {
+      font-weight: normal;
+      font-size: 2rem;
+    }
+    p {
+      max-width: 55%;
+      margin-bottom: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .reg-img {
+      img {
+        width: 100%;
+        max-width: 50%;
+      }
+    }
+  }
+  .testimonials {
+    & > div > p {
+      font-size: 1.8rem;
+      color: $black;
+    }
+    .author--box {
+      position: relative;
+      padding: 20px 0;
 
-@import '06-pages/contact';
-@import '06-pages/home';
+      .author {
+        padding: 20px;
+        background: #ffffff;
+        position: relative;
+        img {
+          height: 60px;
+        }
+        h2 {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+      }
+      &:before {
+        content: '';
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        background: rgba(51, 51, 51, 0.4);
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    padding: 70px 0;
+  }
 
-// 7. Themes (usually omitted for most sites)
+  .banner-learn {
+    background: rgba(204, 204, 204, 0.1);
+    padding: 70px 0;
+    h2 {
+      max-width: 55%;
+      font-size: 2.2rem;
+    }
+  }
+}
+
+@import 'partials/media';

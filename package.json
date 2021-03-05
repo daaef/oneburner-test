@@ -2,9 +2,8 @@
   "name": "static-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel src/html/index.html -p 3000 --open",
-    "prebuild": "rm -rf dist/*",
-    "build": "parcel build src/html/index.html"
+    "start": "parcel src/html/contact.html -p 3000 --open",
+    "build": "parcel build src/html/*.html"
   },
   "keywords": [
     "parcel",

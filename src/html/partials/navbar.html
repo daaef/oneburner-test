@@ -1,14 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Parcel Boilerplate</title>
-    <meta name="author" content="Tom Tillistrand" />
-    <meta name="description" content="Parcel Boilerplate" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../scss/main.scss" type="text/css" />
-  </head>
+<nav class="flex--middle flex">
+  <div class="main--container flex flex--between">
+    <div class="left--nav flex--middle flex">
+      <div class="logo">
+        <a href="index.html"><img src="../img/logo.png" alt="" /></a>
+      </div>
+      <div class="nav--links">
+        <ul>
+          <li class="subnav">
+            <a href="">
+              Product
+              <i class="fas ml-5 fa-angle-down"></i>
+            </a>
+            <div class="subnav--content">
+              <ul class="subnav--list main--container flex">
+                <li>
+                  <a href="">
+                    <div class="icon">
+                      <img src="../img/clients.png" alt="" />
+                    </div>
+                    <div class="nav--text">
+                      <h2>Clients</h2>
+                      <p>See the amazing team that uses Oneburner.</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="icon">
+                      <img src="../img/store.png" alt="" />
+                    </div>
+                    <div class="nav--text">
+                      <h2>Oneburner Stores</h2>
+                      <p>
+                        Explore our ready made solutions to expand your
+                        business.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="icon">
+                      <img src="../img/integrations.png" alt="" />
+                    </div>
+                    <div class="nav--text">
+                      <h2>Integrations</h2>
+                      <p>
+                        Connect different solution to Oneburner and get more
+                        done.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="icon">
+                      <img src="../img/why.png" alt="" />
+                    </div>
+                    <div class="nav--text">
+                      <h2>Why Oneburner?</h2>
+                      <p>
+                        Learn more about our features, success rates,benefits
+                        and demo.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right--nav flex--middle flex">
+      <div class="nav--links">
+        <ul>
+          <li><a href="contact.html">Contact Sales</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li>
+            <a class="btn--nav--link" href="">
+              Try For Free
+              <i class="fas ml-10 fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Home</a></li>
+          <li><a class="menu__item" href="#">Product</a></li>
+          <li><a class="menu__item" href="#">Pricing</a></li>
+          <li><a class="menu__item" href="enterprise.html">Enterprise</a></li>
+          <li><a class="menu__item" href="#">Support</a></li>
+          <li><a class="menu__item" href="contact.html">Contact Sales</a></li>
+          <li><a class="menu__item" href="login.html">Login</a></li>
+          <li><a class="menu__item" href="#">Try For Free</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

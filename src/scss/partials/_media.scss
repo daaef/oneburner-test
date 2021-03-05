@@ -1,0 +1,154 @@
+@media (max-width: 1023px) {
+  .nav--links {
+    display: none;
+  }
+  .menu__btn {
+    display: flex;
+  }
+  header .cta-enter > div {
+    text-align: center;
+    max-width: 85%;
+  }
+  main .banner--how .banner-content .banner-award-card {
+    min-width: 420px;
+  }
+  main .banner--how .banner-content .banner-award-card > div:first-child {
+    width: 80px;
+  }
+  main .banner--how .banner-content .banner-award-card > div:last-child {
+    width: calc(100% - 80px);
+  }
+  main .banner--how .banner-content .how--left {
+    padding-right: 50px;
+  }
+  header.contact--header .contact .left--form,
+  header.contact--header .contact .right--locations {
+    width: 100%;
+  }
+  header.contact--header .contact .left--form {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 869px) {
+  header .cta .right--img {
+    order: 1;
+    width: 90%;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  header .cta .left--title {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+  header .cta {
+    flex-wrap: wrap;
+  }
+  header .cta .left--title .text--content {
+    width: 100%;
+    text-align: center;
+    .btn {
+      width: 100%;
+    }
+  }
+  main .banner--how .banner-content .how--left,
+  main .banner--how .banner-content .how--right {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  main .banner--how .banner-content .how--left {
+    padding-bottom: 30px;
+  }
+  main .departments .tab--view > div,
+  main .headers > div > div {
+    width: 100%;
+    padding: 20px 0;
+    h2,
+    p {
+      max-width: 100%;
+    }
+  }
+  .top--footer {
+    & > div {
+      width: 100%;
+    }
+  }
+  header.login--header .main-content input {
+    width: 100%;
+    min-width: 250px;
+  }
+
+  footer .footer--content .right--foot {
+    order: 1;
+    width: 100%;
+    flex-wrap: wrap;
+    & > div {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  footer .footer--content .left--foot {
+    order: 2;
+    width: 100%;
+    min-height: 20vh;
+  }
+
+  main .integrations .integration--icons > div {
+    width: calc(100% / 5);
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+
+  main .departments .tabs {
+    overflow-x: auto;
+    .tab {
+      min-width: 140px;
+    }
+  }
+  main .banner-learn h2 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 659px) {
+  .our--partners .partner {
+    width: calc((100% / 3) - 10px) !important;
+    margin-top: 20px;
+  }
+  header.contact--header .contact .right--locations .loc--list ul li {
+    width: calc((100% / 2) - 10px);
+  }
+  main .banner--how .banner-content .banner-award-card {
+    padding: 20px 30px;
+    min-width: 300px;
+    img {
+      height: 80px;
+    }
+  }
+  main .banner--how .banner-content h2 {
+    font-size: 1.3rem;
+  }
+  header.contact--header .contact .left--form .inputs.two--inputs > div {
+    width: 100% !important;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 400px) {
+  main .integrations .integration--icons > div {
+    width: calc(100% / 4);
+  }
+  header.contact--header .contact .right--locations .loc--list ul li {
+    width: 100%;
+  }
+}
+
+.menu__box {
+  .menu__item {
+    color: $black !important;
+  }
+}

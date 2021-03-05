@@ -1,0 +1,208 @@
+header {
+  padding: 70px 0;
+  .cta {
+    min-height: calc(100vh - 140px);
+    p {
+      font-size: 1.2rem;
+    }
+    img {
+      height: 65vh;
+      width: 95%;
+      object-fit: contain;
+    }
+    .right--img {
+      max-width: 50%;
+      text-align: right;
+    }
+
+    .left--title {
+      max-width: 50%;
+      .text--content {
+        width: 85%;
+        color: $theme-color;
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+    &-enter {
+      min-height: calc(100vh - 140px);
+      background-image: url(../img/heroBg.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      & > div {
+        text-align: center;
+        max-width: 60%;
+        p {
+          font-size: 1.2rem;
+          color: rgba(51, 51, 51, 0.8);
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          color: $theme-color;
+        }
+      }
+    }
+  }
+  .our--partners {
+    padding-top: 50px;
+    p {
+      color: $black;
+      font-size: 1.2rem;
+    }
+    .partner {
+      height: 5rem;
+      width: calc((100% / 7) - 10px);
+      img {
+        height: 90%;
+        width: 80%;
+        object-fit: contain;
+      }
+    }
+  }
+  &.contact--header {
+    background: rgba(204, 204, 204, 0.1);
+    .contact {
+      padding: 100px 0;
+      min-height: 100vh;
+      .left--form {
+        background: #ffffff;
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.08);
+        padding: 50px;
+        width: 50%;
+        .inputs {
+          & > div {
+            width: 100%;
+          }
+          &.two--inputs {
+            & > div {
+              width: calc(50% - 10px);
+            }
+            &.mod {
+              & > div:first-child {
+                width: calc(55% - 10px);
+              }
+              & > div:last-child {
+                width: calc(45% - 10px);
+              }
+            }
+          }
+          input {
+            display: block;
+            height: 40px;
+            width: 100%;
+            border: 1px solid rgba(21, 11, 40, 0.7);
+            border-radius: 5px;
+          }
+          .input--group {
+            position: relative;
+            &:before {
+              content: '';
+              position: absolute;
+              left: 78px;
+              width: 1px;
+              height: 40px;
+              bottom: 0;
+              background: #000000c7;
+            }
+            input {
+              padding-left: 120px;
+            }
+            .select--down {
+              position: absolute;
+              left: 65px;
+              bottom: 15px;
+            }
+            .current-code {
+              position: absolute;
+              left: 82px;
+              bottom: 10px;
+            }
+            .my--select {
+              position: absolute;
+              top: 22px;
+              left: 5px;
+              height: 28px;
+              overflow-y: hidden;
+              &.clicked {
+                overflow: visible;
+              }
+            }
+          }
+          select {
+            height: 40px;
+            color: rgba(51, 51, 51, 0.4);
+          }
+        }
+      }
+      .right--locations {
+        padding-left: 50px;
+        width: 50%;
+        h2 {
+          font-size: 2.4rem;
+          font-weight: normal;
+        }
+        .loc--list {
+          ul {
+            li {
+              width: calc((100% / 3) - 10px);
+              margin-top: 15px;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: column;
+              justify-content: space-between;
+              h3 {
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.login--header {
+    padding-bottom: 0;
+    min-height: calc(100vh - 80px);
+    width: 100%;
+    .main-content {
+      min-height: calc(100vh - 150px);
+      h2 {
+        font-size: 2rem;
+        margin: 0;
+      }
+      p {
+        color: rgba(69, 69, 69, 0.8);
+        margin: 10px 0 0;
+      }
+      label {
+        display: block;
+      }
+      input {
+        min-width: 300px;
+        height: 40px;
+        width: 400px;
+        border: 1px solid rgba(21, 11, 40, 0.7);
+        border-radius: 5px;
+      }
+
+      .sign--icons {
+        a {
+          margin-right: 15px;
+          margin-left: 15px;
+          margin-top: 25px;
+          img {
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.login--footer {
+  text-align: center;
+  line-height: 80px;
+  padding: 0;
+}
