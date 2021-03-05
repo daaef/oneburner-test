@@ -7,6 +7,14 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Sofia Pro', sans-serif;
+}
 
 body {
   margin: 0;
@@ -29,7 +37,7 @@ img {
 }
 
 .container {
-  width: 95%;
+  width:100%;
   max-width: 1200px;
 }
 
